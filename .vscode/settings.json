@@ -1,0 +1,12 @@
+{
+  "cSpell.words": [
+    "argmax",
+    "dones",
+    "dtype",
+    "optim",
+    "popleft",
+    "preds",
+    "relu",
+    "unsqueeze"
+  ]
+}

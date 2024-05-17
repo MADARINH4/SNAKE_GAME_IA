@@ -18,7 +18,10 @@ class COLORS(Enum):
     
 class SETTINGS(Enum):    
     BLOCK_SIZE = 20    
-    SPEED = 20
-    GAME_WIDTH = 1280
-    GAME_HEIGHT = 720    
-  
+    SPEED = 50
+    GAME_WIDTH = 640
+    GAME_HEIGHT = 480
+    MAX_MEMORY = 100_000
+    BATCH_SIZE = 1000
+    LR = 0.001
+        
