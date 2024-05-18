@@ -22,7 +22,7 @@ class SnakeGame:
         
         #Init game state
         self.score = 0
-        self.direction = DIRECTION.RIGHT.value
+        self.direction = DIRECTION.DOWN.value
         self.snake = Snake()
         self.food = None
         self._place_food()
@@ -62,6 +62,7 @@ class SnakeGame:
             pygame.draw.rect(self.display, COLORS.BLUE2.value, pygame.Rect(point.x+4, point.y+4, 12, 12))
         #Define display of food
         pygame.draw.rect(self.display, COLORS.RED.value, pygame.Rect(self.food.coordinates.x, self.food.coordinates.y, SETTINGS.BLOCK_SIZE.value, SETTINGS.BLOCK_SIZE.value))
+        #pygame.draw.circle(self.display, COLORS.RED.value, ((self.food.coordinates.x + SETTINGS.BLOCK_SIZE.value), (self.food.coordinates.y + SETTINGS.BLOCK_SIZE.value)), 10)
         
         text = font.render("Score: "+ str(self.score), True, COLORS.WHITE.value)
         self.display.blit(text, [0, 0])
